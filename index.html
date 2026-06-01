@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Relatório Mensal — Lum1no · Maio 2026 | Esquina</title>
+  <title>Relatório Mensal · Lum1no · Maio 2026 | Esquina</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -291,7 +291,31 @@
     @media(max-width:900px){.cj-grid{grid-template-columns:1fr}.ad-grid{grid-template-columns:1fr}.dc-grid{grid-template-columns:1fr 1fr}.gs-grid{grid-template-columns:1fr}}
     @media(max-width:768px){.nav-chips{display:none}.section{padding:48px 16px}.kpi-grid{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.mm-stats{grid-template-columns:1fr;text-align:center}.mm-side{align-items:center}.enc-cards{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.dc-grid{grid-template-columns:1fr}.enc-cards{grid-template-columns:1fr}}
-    @media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}.setup-overlay,.btn-canais,.btn-export{display:none!important}.fade-in{opacity:1!important;transform:none!important}[data-channel]{display:block!important}@page{size:A4 landscape;margin:15mm}}
+    @media print{
+      *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+      .setup-overlay,.btn-canais,.btn-export,.nav{display:none!important}
+      .fade-in{opacity:1!important;transform:none!important}
+      [data-channel]{display:block!important}
+      body{background:#fff!important}
+      .hero{min-height:auto!important;padding:40px 24px!important;page-break-after:always}
+      .enc{page-break-after:always}
+      .enc-cards{grid-template-columns:repeat(2,1fr)!important}
+      .meta-wrap{page-break-inside:avoid}
+      .section{padding:40px 24px!important;page-break-inside:avoid}
+      .kpi-grid{grid-template-columns:repeat(3,1fr)!important}
+      .cj-grid{grid-template-columns:repeat(2,1fr)!important}
+      .ad-grid{grid-template-columns:repeat(3,1fr)!important;page-break-inside:avoid}
+      .ad{page-break-inside:avoid}
+      .ad-img{height:180px!important}
+      .ch-box{page-break-inside:avoid}
+      .gs-grid{grid-template-columns:repeat(3,1fr)!important}
+      .diag{page-break-before:always}
+      .dc-grid{grid-template-columns:repeat(3,1fr)!important}
+      .dc{page-break-inside:avoid}
+      .ch-sep{page-break-before:always;page-break-after:avoid}
+      canvas{max-height:180px!important}
+      @page{size:A4 landscape;margin:12mm}
+    }
   </style>
 </head>
 <body>
@@ -307,14 +331,14 @@
         <input type="checkbox" value="meta" checked disabled />
         <div class="setup-ch-label">
           <span class="setup-ch-name">Meta Ads</span>
-          <span class="setup-ch-desc">Obrigatório — Reconhecimento CPM · Instagram e Facebook</span>
+          <span class="setup-ch-desc">Obrigatório · Reconhecimento CPM · Instagram e Facebook</span>
         </div>
       </label>
       <label class="setup-ch">
         <input type="checkbox" value="search" checked />
         <div class="setup-ch-label">
           <span class="setup-ch-name">Google Search</span>
-          <span class="setup-ch-desc">Captura de demanda ativa — Salvador e Região Metropolitana</span>
+          <span class="setup-ch-desc">Captura de demanda ativa · Salvador e Região Metropolitana</span>
         </div>
       </label>
     </div>
@@ -328,7 +352,7 @@
     <span class="nav-logo-text">Esquina</span>
     <div class="nav-logo-divider"></div>
     <div class="nav-logo-client-block">
-      <span class="nav-logo-client">Lum1no — New Business School</span>
+      <span class="nav-logo-client">Lum1no · New Business School</span>
     </div>
     <span class="nav-badge-mensal">Mensal</span>
   </div>
@@ -379,14 +403,14 @@
       <div class="enc-eyebrow">Maio em destaque</div>
       <h2 class="enc-headline fade-in">
         Em maio, a Lum1no chegou a
-        <span class="hl-teal">+269 mil pessoas</span> em Salvador e RMS —
-        e na busca, <span class="hl-blue">cada 3 em 10 cliques viraram conversão.</span>
+        <span class="hl-teal">+269 mil pessoas</span> em Salvador e RMS.
+        Na busca, <span class="hl-blue">cada 3 em 10 cliques viraram conversão.</span>
       </h2>
       <p class="enc-story fade-in">
-        Maio foi o mês em que a Lum1no ocupou as telas das pessoas certas — jovens e adultos de Salvador
+        Maio foi o mês em que a Lum1no ocupou as telas das pessoas certas: jovens e adultos de Salvador
         e região que estão no horizonte da decisão de matrícula. A campanha de reconhecimento superou
         a meta de impressões e entregou mais de 472 mil veiculações. No Google Search, a combinação
-        de grupos bem estruturados resultou em 329 conversões com taxa média de 29% — sinal de que
+        de grupos bem estruturados resultou em 329 conversões com taxa média de 29%, sinal de que
         quem chega à busca já tem intenção clara.
       </p>
     </div>
@@ -395,7 +419,7 @@
         <span class="enc-icon">🎯</span>
         <div class="enc-num">105,1%</div>
         <div class="enc-label">da meta de impressões entregue</div>
-        <div class="enc-ctx">Meta era 450k — superamos em +22,7k</div>
+        <div class="enc-ctx">Meta era 450k. Superamos em +22,7k</div>
       </div>
       <div class="enc-card fade-in">
         <span class="enc-icon">👥</span>
@@ -413,12 +437,12 @@
         <span class="enc-icon">⚡</span>
         <div class="enc-num">329</div>
         <div class="enc-label">conversões no Google</div>
-        <div class="enc-ctx">Taxa de 29,24% — acima da média do setor</div>
+        <div class="enc-ctx">Taxa de 29,24%, acima da média do setor</div>
       </div>
     </div>
     <div class="enc-transition fade-in">
       <div class="enc-transition-line"></div>
-      <span class="enc-transition-text">Agora, veja os números por dentro — conjunto a conjunto, canal a canal.</span>
+      <span class="enc-transition-text">Agora, veja os números por dentro: conjunto a conjunto, canal a canal.</span>
       <div class="enc-transition-line"></div>
     </div>
   </div>
@@ -428,7 +452,7 @@
 <section class="section" id="kpis">
   <span class="sl">Métricas Consolidadas</span>
   <h2 class="st fade-in">KPIs do Mês Completo</h2>
-  <p class="ss fade-in">Visão geral da performance em maio de 2026 — do dia 1 ao dia 31.</p>
+  <p class="ss fade-in">Visão geral da performance em maio de 2026, do dia 1 ao dia 31.</p>
 
   <div class="kpi-grid">
     <div class="kc teal featured fade-in">
@@ -474,7 +498,7 @@
       <span class="ch-sep-icon">📱</span>
       <div class="ch-sep-info">
         <div class="ch-sep-label">Canal de mídia</div>
-        <div class="ch-sep-name">Meta Ads — Reconhecimento CPM · Instagram & Facebook</div>
+        <div class="ch-sep-name">Meta Ads · Reconhecimento CPM · Instagram & Facebook</div>
       </div>
     </div>
     <div class="ch-sep-accent"></div>
@@ -485,7 +509,7 @@
     <div class="meta-inner">
       <span class="sl teal">Meta da Campanha</span>
       <h2 class="st fade-in">Meta de Impressões Superada</h2>
-      <p class="ss fade-in">A meta de 450 mil impressões foi cumprida e encerrou maio com 5,1% acima do contratado — entregando mais cobertura sem custo adicional.</p>
+      <p class="ss fade-in">A meta de 450 mil impressões foi cumprida e encerrou maio com 5,1% acima do contratado, entregando mais cobertura sem custo adicional.</p>
       <div class="mm-wrap fade-in">
         <div class="mm-stats">
           <div class="mm-side">
@@ -511,7 +535,7 @@
       </div>
       <div class="meta-insight fade-in">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#17A697" stroke-width="2" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <span>Com <strong>105,1% da meta entregue</strong>, a campanha encerrou maio com saldo positivo de impressões. As 22,7 mil veiculações extras representam cobertura adicional que o contrato não previa — resultado da boa otimização do leilão pelo algoritmo.</span>
+        <span>Com <strong>105,1% da meta entregue</strong>, a campanha encerrou maio com saldo positivo de impressões. As 22,7 mil veiculações extras representam cobertura adicional que o contrato não previa. Resultado da boa otimização do leilão pelo algoritmo.</span>
       </div>
     </div>
   </div>
@@ -520,7 +544,7 @@
   <section class="section" id="conjuntos">
     <span class="sl purple">Distribuição por Conjunto</span>
     <h2 class="st fade-in">Conjuntos de Anúncios</h2>
-    <p class="ss fade-in">A campanha rodou em dois conjuntos focados em Salvador e RMS, com segmentações complementares — interesses e audiências personalizadas.</p>
+    <p class="ss fade-in">A campanha rodou em dois conjuntos focados em Salvador e RMS, com segmentações complementares: interesses e audiências personalizadas.</p>
     <div class="cj-grid">
       <div class="cj p1 fade-in">
         <div class="cj-tag">Interesses</div>
@@ -541,7 +565,7 @@
       <div class="cj p2 fade-in">
         <div class="cj-tag">Audiência + LAL · Processo</div>
         <div class="cj-title">18 a 30 · Audiência + Lookalike · Salvador e RMS</div>
-        <div class="cj-desc">Público lookalike e audiências personalizadas ligadas ao processo seletivo — perfil de maior intenção de matrícula.</div>
+        <div class="cj-desc">Público lookalike e audiências personalizadas ligadas ao processo seletivo, com perfil de maior intenção de matrícula.</div>
         <div class="cj-metrics">
           <div class="cmi"><span class="cmi-v">+251K</span><span class="cmi-k">Impressões</span></div>
           <div class="cmi"><span class="cmi-v">+147K</span><span class="cmi-k">Contas alcançadas</span></div>
@@ -608,12 +632,12 @@
       </div>
     </div>
     <div class="ch-box fade-in">
-      <div class="ch-hdr"><div><div class="ch-title">Impressões por Criativo — Maio completo</div><div class="ch-desc">Bellintani e Card III concentraram 73,3% das impressões do mês.</div></div></div>
+      <div class="ch-hdr"><div><div class="ch-title">Impressões por Criativo · Maio completo</div><div class="ch-desc">Bellintani e Card III concentraram 73,3% das impressões do mês.</div></div></div>
       <div class="ch-wrap" style="height:200px"><canvas id="chartAnuncios"></canvas></div>
     </div>
     <div class="ib teal fade-in">
-      <div class="ib-lbl">Destaque do mês — Card III · Processo Seletivo</div>
-      <div class="ib-txt">O Card III foi o anúncio com <strong>maior número de cliques no mês (160)</strong> — superando o Vídeo II mesmo com volume de impressões semelhante. O formato card com chamada direta ao processo seletivo gerou CTR mais alto, indicando que imagens estáticas com CTA claro performam melhor para capturar intenção de clique em públicos frios.</div>
+      <div class="ib-lbl">Destaque do mês · Card III · Processo Seletivo</div>
+      <div class="ib-txt">O Card III foi o anúncio com <strong>maior número de cliques no mês (160)</strong>, superando o Vídeo II mesmo com volume de impressões semelhante. O formato card com chamada direta ao processo seletivo gerou CTR mais alto, indicando que imagens estáticas com CTA claro performam melhor para capturar intenção de clique em públicos frios.</div>
     </div>
   </section>
 </div><!-- /data-channel="meta" -->
@@ -625,7 +649,7 @@
       <span class="ch-sep-icon">🔍</span>
       <div class="ch-sep-info">
         <div class="ch-sep-label">Canal de mídia</div>
-        <div class="ch-sep-name">Google Search — Captura de Demanda Ativa</div>
+        <div class="ch-sep-name">Google Search · Captura de Demanda Ativa</div>
       </div>
     </div>
     <div class="ch-sep-accent"></div>
@@ -635,7 +659,7 @@
   <div class="meta-wrap" id="search-meta">
     <div class="meta-inner">
       <span class="sl tl">Meta da Campanha</span>
-      <h2 class="st fade-in">1.125 Cliques — 75% da Meta</h2>
+      <h2 class="st fade-in">1.125 Cliques · 75% da Meta</h2>
       <p class="ss fade-in">A meta de 1.500 cliques foi parcialmente atingida em maio. O período foi marcado pela pausa de campanhas de maior orçamento, com a campanha ativa mantendo eficiência elevada.</p>
       <div class="mm-wrap fade-in">
         <div class="mm-stats">
@@ -671,7 +695,7 @@
   <section class="section" id="search-canal">
     <span class="sl tl">Google Search</span>
     <h2 class="st fade-in">Performance por Grupo de Anúncios</h2>
-    <p class="ss fade-in">Os grupos ativos em maio trouxeram 1.125 cliques com taxa de conversão expressiva — especialmente nos grupos focados na Faculdade e Processo Seletivo.</p>
+    <p class="ss fade-in">Os grupos ativos em maio trouxeram 1.125 cliques com taxa de conversão expressiva, especialmente nos grupos focados na Faculdade e Processo Seletivo.</p>
 
     <div class="kpi-grid" style="margin-top:32px">
       <div class="kc teal featured fade-in">
@@ -701,7 +725,7 @@
     <div class="gs-grid fade-in" style="margin-top:32px">
       <div class="gs-card">
         <div class="gs-card-id">Grupo 01 · Principal</div>
-        <div class="gs-card-name">Grupo 1 — Faculdade Lum1no</div>
+        <div class="gs-card-name">Grupo 1 · Faculdade Lum1no</div>
         <div class="gs-card-metrics">
           <div class="gs-mi"><span class="gs-mi-v">410</span><span class="gs-mi-k">Cliques</span></div>
           <div class="gs-mi"><span class="gs-mi-v">109</span><span class="gs-mi-k">Conversões</span></div>
@@ -721,7 +745,7 @@
       </div>
       <div class="gs-card">
         <div class="gs-card-id">Grupo 03</div>
-        <div class="gs-card-name">Grupo 2 — Administração</div>
+        <div class="gs-card-name">Grupo 2 · Administração</div>
         <div class="gs-card-metrics">
           <div class="gs-mi"><span class="gs-mi-v">181</span><span class="gs-mi-k">Cliques</span></div>
           <div class="gs-mi"><span class="gs-mi-v">39</span><span class="gs-mi-k">Conversões</span></div>
@@ -732,25 +756,25 @@
     </div>
 
     <div class="ch-box fade-in">
-      <div class="ch-hdr"><div><div class="ch-title">Cliques por Grupo · Campanha Ativa (LUMINO - SEARCH)</div><div class="ch-desc">Grupo 1 concentrou 64,2% dos cliques — o grupo de maior volume e melhor CTR.</div></div></div>
+      <div class="ch-hdr"><div><div class="ch-title">Cliques por Grupo · Campanha Ativa (LUMINO - SEARCH)</div><div class="ch-desc">Grupo 1 concentrou 64,2% dos cliques, o grupo de maior volume e melhor CTR.</div></div></div>
       <div class="ch-wrap" style="height:200px"><canvas id="chartSearch"></canvas></div>
     </div>
 
     <div class="ib teal fade-in">
-      <div class="ib-lbl">Análise — Google Search</div>
-      <div class="ib-txt">A taxa de conversão de <strong>29,24%</strong> na Pesquisa está muito acima da média do setor educacional (tipicamente 5–12%). Isso indica que as palavras-chave capturadas estão trazendo usuários com intenção real de pesquisa sobre a Lum1no — não apenas tráfego genérico. O desafio de maio foi volume: com orçamento diário de R$5,00 na campanha ativa, o teto de entrega foi atingido rapidamente. Reativar as campanhas pausadas em junho é o caminho para atingir a meta de 1.500 cliques.</div>
+      <div class="ib-lbl">Análise · Google Search</div>
+      <div class="ib-txt">A taxa de conversão de <strong>29,24%</strong> na Pesquisa está muito acima da média do setor educacional (tipicamente 5–12%). Isso indica que as palavras-chave capturadas estão trazendo usuários com intenção real de pesquisa sobre a Lum1no, não apenas tráfego genérico. O desafio de maio foi volume: com orçamento diário de R$5,00 na campanha ativa, o teto de entrega foi atingido rapidamente. A reativação das as campanhas pausadas em junho é o caminho para atingir a meta de 1.500 cliques.</div>
     </div>
 
     <div class="ch-box fade-in" style="margin-top:24px">
-      <div class="ch-title" style="margin-bottom:16px">Detalhamento por Grupo — Maio</div>
+      <div class="ch-title" style="margin-bottom:16px">Detalhamento por Grupo · Maio</div>
       <div style="overflow-x:auto">
         <table>
           <thead><tr><th>Grupo de Anúncios</th><th>Impressões</th><th>Cliques</th><th>CTR</th><th>Conversões</th><th>Taxa Conv.</th></tr></thead>
           <tbody>
-            <tr class="hl"><td>Grupo 1 — Faculdade Lum1no</td><td>6.966</td><td>410</td><td>5,89%</td><td>109</td><td>26,6%</td></tr>
+            <tr class="hl"><td>Grupo 1 · Faculdade Lum1no</td><td>6.966</td><td>410</td><td>5,89%</td><td>109</td><td>26,6%</td></tr>
             <tr><td>Processo Seletivo</td><td>5.838</td><td>196</td><td>3,36%</td><td>57</td><td>29,3%</td></tr>
-            <tr><td>Grupo 2 — Administração</td><td>6.306</td><td>181</td><td>2,87%</td><td>39</td><td>21,8%</td></tr>
-            <tr><td>Grupo Anúncios Dinâmicos</td><td>51</td><td>18</td><td>35,3%</td><td>0</td><td>—</td></tr>
+            <tr><td>Grupo 2 · Administração</td><td>6.306</td><td>181</td><td>2,87%</td><td>39</td><td>21,8%</td></tr>
+            <tr><td>Grupo Anúncios Dinâmicos</td><td>51</td><td>18</td><td>35,3%</td><td>0</td><td>n/d</td></tr>
             <tr><td>Grupo 1 LN · Premium (pausado)</td><td>814</td><td>149</td><td>18,3%</td><td>65</td><td>43,6%</td></tr>
             <tr><td>Processo Seletivo · Premium (pausado)</td><td>718</td><td>95</td><td>13,2%</td><td>30</td><td>31,6%</td></tr>
             <tr><td>Grupo 2 Adm · Premium (pausado)</td><td>387</td><td>76</td><td>19,6%</td><td>28</td><td>36,8%</td></tr>
@@ -766,30 +790,30 @@
   <div class="diag-inner">
     <span class="sl diag-lbl">Diagnóstico</span>
     <h2 class="st diag-st fade-in">O que maio revelou</h2>
-    <p class="ss diag-ss fade-in">Uma leitura estratégica do mês completo — o que os números dizem sobre a demanda por Lum1no em Salvador e o que isso indica para junho.</p>
+    <p class="ss diag-ss fade-in">Uma leitura estratégica do mês completo: o que os dados dizem sobre a demanda por Lum1no em Salvador e o que isso indica para junho.</p>
     <div class="dc-grid fade-in">
       <div class="dc">
         <div class="dc-acc t"></div>
         <div class="dc-num">01</div>
         <div class="dc-title">A Lum1no chegou onde precisava chegar</div>
-        <div class="dc-text">Maio cumpriu seu papel de reconhecimento: 269 mil pessoas em Salvador e Região Metropolitana tiveram contato com a marca. A campanha não só entregou o volume contratado de impressões — ela foi além, com 5% a mais sem custo adicional. O terreno está preparado para o próximo passo.</div>
+        <div class="dc-text">Maio cumpriu seu papel de reconhecimento: 269 mil pessoas em Salvador e Região Metropolitana tiveram contato com a marca. A campanha não só entregou o volume contratado de impressões, indo além, com 5% a mais sem custo adicional. O terreno está preparado para o próximo passo.</div>
       </div>
       <div class="dc">
         <div class="dc-acc b"></div>
         <div class="dc-num">02</div>
         <div class="dc-title">Quem busca a Lum1no, quer a Lum1no</div>
-        <div class="dc-text">A taxa de conversão de 29% no Google Search não é um número comum — a média no setor educacional fica entre 5% e 12%. Isso indica que as palavras-chave capturadas trazem pessoas com intenção real de matrícula, não tráfego genérico. O produto ressoa com quem está em modo de decisão.</div>
+        <div class="dc-text">A taxa de conversão de 29% no Google Search não é um número comum. A média no setor educacional fica entre 5% e 12%. Isso indica que as palavras-chave capturadas trazem pessoas com intenção real de matrícula, não tráfego genérico. O produto ressoa com quem está em modo de decisão.</div>
       </div>
       <div class="dc">
         <div class="dc-acc t"></div>
         <div class="dc-num">03</div>
-        <div class="dc-title">Frequência saudável — sem desgastar o público</div>
-        <div class="dc-text">Com 1,76 exposições por pessoa, a campanha de reconhecimento manteve presença sem saturar. Esse nível de frequência é ideal para o estágio em que a Lum1no está: uma marca que ainda está se apresentando ao mercado não precisa — nem deve — aparecer demais logo de início.</div>
+        <div class="dc-title">Frequência saudável, sem desgaste de público</div>
+        <div class="dc-text">Com 1,76 exposições por pessoa, a campanha de reconhecimento manteve presença sem saturar. Esse nível de frequência é ideal para o estágio em que a Lum1no está: uma marca que ainda está se apresentando ao mercado não precisa nem deve aparecer demais logo de início.</div>
       </div>
       <div class="dc">
         <div class="dc-acc p"></div>
         <div class="dc-num">04</div>
-        <div class="dc-title">O Search ficou abaixo da meta — e isso tem solução</div>
+        <div class="dc-title">O Search ficou abaixo da meta, mas a solução é clara</div>
         <div class="dc-text">A meta de 1.500 cliques não foi atingida porque as campanhas de maior orçamento ficaram pausadas durante o mês. O dado que importa: onde havia verba rodando, a performance foi consistente. Reativar as campanhas em junho com os grupos já testados é o caminho mais direto para recuperar o volume.</div>
       </div>
       <div class="dc">
@@ -801,8 +825,8 @@
       <div class="dc">
         <div class="dc-acc t"></div>
         <div class="dc-num">06</div>
-        <div class="dc-title">Maio foi o começo — junho pode ser a conversão</div>
-        <div class="dc-text">Com 269 mil pessoas alcançadas no Meta e 329 conversões na busca, maio plantou. O público que viu os anúncios agora pode ser reimpactado com mensagens mais diretas de conversão — e quem chegou ao site via Search já demonstrou intenção. O funil está aquecido para junho.</div>
+        <div class="dc-title">Maio foi o começo. Junho pode ser a conversão</div>
+        <div class="dc-text">Com 269 mil pessoas alcançadas no Meta e 329 conversões na busca, maio plantou. O público que viu os anúncios agora pode ser reimpactado com mensagens mais diretas de conversão. Quem chegou ao site via Search já demonstrou intenção. O funil está aquecido para junho.</div>
       </div>
     </div>
   </div>
@@ -813,7 +837,7 @@
   <div class="footer-logo">Esquina</div>
   <p class="footer-txt">
     Relatório Mensal gerado por Esquina · Agência de Performance · Maio 2026<br/>
-    Dados extraídos do Meta Ads Manager e Google Ads · Campanha Lum1no — New Business School
+    Dados extraídos do Meta Ads Manager e Google Ads · Campanha Lum1no · New Business School
   </p>
 </footer>
 
@@ -937,7 +961,7 @@ new Chart(document.getElementById('chartAnuncios'), {
 new Chart(document.getElementById('chartSearch'), {
   type: 'bar',
   data: {
-    labels: ['Grupo 1 — Faculdade Lum1no', 'Processo Seletivo', 'Grupo 2 — Administração'],
+    labels: ['Grupo 1 · Faculdade Lum1no', 'Processo Seletivo', 'Grupo 2 · Administração'],
     datasets: [{ data: [410, 196, 181], backgroundColor: [C.teal, C.blue, C.navy], borderColor: 'transparent', borderRadius: 8, borderSkipped: false }]
   },
   options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, layout: { padding: { right: 40 } },
