@@ -287,6 +287,8 @@
     .fade-in.visible{opacity:1;transform:translateY(0)}
 
     /* RESPONSIVE */
+    .conv-tipo-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    @media(max-width:768px){.conv-tipo-grid{grid-template-columns:1fr}}
     @media(max-width:1024px){.enc-cards{grid-template-columns:repeat(2,1fr)}.gs-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:900px){.cj-grid{grid-template-columns:1fr}.ad-grid{grid-template-columns:1fr}.dc-grid{grid-template-columns:1fr 1fr}.gs-grid{grid-template-columns:1fr}}
     @media(max-width:768px){.nav-chips{display:none}.section{padding:48px 16px}.kpi-grid{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.mm-stats{grid-template-columns:1fr;text-align:center}.mm-side{align-items:center}.enc-cards{grid-template-columns:1fr 1fr}}
@@ -794,7 +796,7 @@
           <div class="ch-desc">208 conversões qualificadas, excluindo visualizações de página.</div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+      <div class="conv-tipo-grid">
         <div class="ch-wrap" style="height:220px"><canvas id="chartConvTipos"></canvas></div>
         <div style="display:flex;flex-direction:column;gap:10px">
           <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#F4F6FF;border-radius:10px;border-left:3px solid #1A3CFF">
