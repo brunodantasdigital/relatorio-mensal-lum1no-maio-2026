@@ -291,34 +291,145 @@
     @media(max-width:900px){.cj-grid{grid-template-columns:1fr}.ad-grid{grid-template-columns:1fr}.dc-grid{grid-template-columns:1fr 1fr}.gs-grid{grid-template-columns:1fr}}
     @media(max-width:768px){.nav-chips{display:none}.section{padding:48px 16px}.kpi-grid{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.mm-stats{grid-template-columns:1fr;text-align:center}.mm-side{align-items:center}.enc-cards{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.dc-grid{grid-template-columns:1fr}.enc-cards{grid-template-columns:1fr}}
-        @media print {
-      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-      body { background: #FFFFFF !important; font-size: 10pt; }
+                @media print {
+      /* ── CORES E BASE ── */
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; box-sizing: border-box !important; }
+      @page { size: A4 landscape; margin: 10mm 12mm; }
+      body { background: #FFFFFF !important; font-size: 9pt !important; }
+
+      /* ── OCULTAR ELEMENTOS DE UI ── */
       .nav, .btn-export, .btn-canais, .setup-overlay { display: none !important; }
       .fade-in { opacity: 1 !important; transform: none !important; }
-      @page { size: A4 landscape; margin: 15mm; }
-      .hero { min-height: auto !important; padding: 40px 0 !important; page-break-after: always; }
-      .enc { display: none !important; }
-      .section { padding: 30px 0 !important; page-break-inside: avoid; }
-      #kpis { page-break-before: always; }
-      #meta { page-break-before: always; }
-      #conjuntos { page-break-before: always; }
-      #anuncios { page-break-before: always; }
-      #search-meta { page-break-before: always; }
-      #search-canal { page-break-before: always; }
-      #diagnostico { page-break-before: always; }
-      .meta-wrap { page-break-inside: avoid; }
-      .ch-box { page-break-inside: avoid; }
-      .ad { page-break-inside: avoid; }
-      .dc { page-break-inside: avoid; }
-      .ch-wrap { height: 220px !important; }
-      .ad-grid { grid-template-columns: 1fr 1fr 1fr !important; }
-      .ad-img { height: 180px !important; }
-      .cj-grid { grid-template-columns: 1fr 1fr !important; }
-      .dc-grid { grid-template-columns: 1fr 1fr 1fr !important; }
-      .gs-grid { grid-template-columns: 1fr 1fr 1fr !important; }
-      .kpi-grid { grid-template-columns: repeat(3, 1fr) !important; }
       [data-channel] { display: block !important; }
+
+      /* ── QUEBRAS DE PÁGINA ── */
+      .hero        { page-break-after: always; break-after: always; page-break-inside: avoid; break-inside: avoid; }
+      #kpis        { page-break-before: always; break-before: always; page-break-inside: avoid; break-inside: avoid; }
+      .meta-wrap   { page-break-before: always; break-before: always; page-break-inside: avoid; break-inside: avoid; }
+      #conjuntos   { page-break-before: always; break-before: always; page-break-inside: avoid; break-inside: avoid; }
+      #anuncios    { page-break-before: always; break-before: always; }
+      #search-meta { page-break-before: always; break-before: always; page-break-inside: avoid; break-inside: avoid; }
+      #search-canal { page-break-before: always; break-before: always; }
+      #diagnostico { page-break-before: always; break-before: always; page-break-inside: avoid; break-inside: avoid; }
+      .ch-sep      { page-break-before: avoid; break-before: avoid; page-break-after: avoid; break-after: avoid; }
+
+      /* Evitar cortes internos */
+      .dc          { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .ad          { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .ch-box      { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .gs-card     { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .gs-card-metrics { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .cj          { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .kc          { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .ib          { page-break-inside: avoid !important; break-inside: avoid !important; }
+      .mm-wrap     { page-break-inside: avoid !important; break-inside: avoid !important; }
+
+      /* ── HERO COMPACTO ── */
+      .hero { min-height: auto !important; padding: 0 !important; }
+      .hero-content { padding: 28px 24px 18px !important; }
+      .logo-circle { width: 46px !important; height: 46px !important; font-size: .85rem !important; margin-bottom: 10px !important; }
+      .hero-badge { margin-bottom: 12px !important; padding: 3px 10px !important; font-size: .58rem !important; }
+      .hero-title { font-size: 2.4rem !important; margin-bottom: 8px !important; line-height: .95 !important; }
+      .hero-sub { font-size: .8rem !important; margin-bottom: 18px !important; line-height: 1.5 !important; }
+      .hero-meta { gap: 8px !important; flex-wrap: nowrap !important; }
+      .hmi { padding: 8px 12px !important; min-width: 80px !important; }
+      .hmi-val { font-size: 1.3rem !important; }
+      .hmi-lbl { font-size: .54rem !important; }
+
+      /* ── SEÇÕES COMPACTAS ── */
+      .section { padding: 14px 24px !important; }
+      .sl { margin-bottom: 4px !important; font-size: .58rem !important; }
+      .st { font-size: 1.5rem !important; margin-bottom: 6px !important; }
+      .ss { font-size: .78rem !important; margin-bottom: 0 !important; line-height: 1.4 !important; }
+
+      /* ── CH-SEP ── */
+      .ch-sep { padding: 10px 24px 0 !important; }
+      .ch-sep-name { font-size: .9rem !important; }
+
+      /* ── META PROGRESSO ── */
+      .meta-wrap { padding: 18px 24px !important; }
+      .mm-wrap { margin-top: 14px !important; }
+      .mm-stats { margin-bottom: 14px !important; gap: 16px !important; }
+      .mm-pct { font-size: 3.2rem !important; }
+      .mm-pct sup { font-size: 1.6rem !important; }
+      .mm-sv { font-size: 1.2rem !important; }
+      .mm-sk { font-size: .6rem !important; }
+      .mm-pl { font-size: .62rem !important; }
+      .mm-status, .mm-over, .mm-under { font-size: .6rem !important; }
+      .meta-insight { margin-top: 8px !important; padding: 8px 14px !important; font-size: .74rem !important; }
+
+      /* ── KPI GRID ── */
+      .kpi-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 8px !important; margin-top: 12px !important; }
+      .kc { padding: 12px !important; }
+      .kc-val { font-size: 1.3rem !important; margin-bottom: 2px !important; }
+      .kc-lbl { font-size: .58rem !important; margin-bottom: 4px !important; }
+      .kc-sub { font-size: .64rem !important; }
+      .kc-badge { font-size: .54rem !important; padding: 2px 6px !important; margin-bottom: 4px !important; }
+
+      /* ── CONJUNTOS ── */
+      .cj-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; margin-top: 12px !important; }
+      .cj { padding: 16px !important; }
+      .cj-tag { font-size: .6rem !important; margin-bottom: 8px !important; }
+      .cj-title { font-size: .85rem !important; margin-bottom: 2px !important; }
+      .cj-desc { font-size: .68rem !important; margin-bottom: 10px !important; }
+      .cj-metrics { gap: 6px !important; }
+      .cmi-v { font-size: .95rem !important; }
+      .cmi-k { font-size: .58rem !important; }
+      .cj-bar { margin-top: 10px !important; padding-top: 10px !important; }
+      .cb-lbl { font-size: .62rem !important; }
+      .cb-pct { font-size: .66rem !important; }
+
+      /* ── CHART BOX ── */
+      .ch-box { padding: 14px !important; margin-top: 10px !important; }
+      .ch-wrap { height: 150px !important; }
+      .ch-title { font-size: .85rem !important; }
+      .ch-desc { font-size: .68rem !important; }
+
+      /* ── ANÚNCIOS ── */
+      .ad-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 10px !important; margin-top: 12px !important; }
+      .ad-img { height: 150px !important; }
+      .ad-body { padding: 10px !important; }
+      .ad-badge { font-size: .56rem !important; }
+      .ad-fmt { font-size: .56rem !important; }
+      .ad-name { font-size: .74rem !important; margin-bottom: 6px !important; padding-bottom: 6px !important; }
+      .ad-metrics { gap: 4px !important; }
+      .ami { padding: 5px !important; }
+      .ami-v { font-size: .85rem !important; }
+      .ami-k { font-size: .54rem !important; }
+      .ib { margin-top: 8px !important; padding: 8px 14px !important; }
+      .ib-lbl { font-size: .56rem !important; }
+      .ib-txt { font-size: .74rem !important; }
+
+      /* ── GOOGLE SEARCH GRUPOS ── */
+      .gs-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 8px !important; margin-top: 12px !important; }
+      .gs-card { padding: 12px !important; }
+      .gs-card-id { font-size: .56rem !important; margin-bottom: 4px !important; }
+      .gs-card-name { font-size: .78rem !important; margin-bottom: 10px !important; }
+      .gs-card-metrics { grid-template-columns: 1fr 1fr !important; gap: 4px !important; }
+      .gs-mi { padding: 5px 6px !important; }
+      .gs-mi-v { font-size: .85rem !important; }
+      .gs-mi-k { font-size: .54rem !important; }
+
+      /* ── TABELA ── */
+      table { font-size: .68rem !important; }
+      thead th { padding: 5px 8px !important; font-size: .58rem !important; }
+      tbody td { padding: 5px 8px !important; }
+
+      /* ── DIAGNÓSTICO — 6 cards numa página só ── */
+      .diag { padding: 20px 24px !important; }
+      .diag-inner .st { font-size: 1.4rem !important; }
+      .diag-inner .ss { font-size: .76rem !important; }
+      .dc-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 10px !important; margin-top: 16px !important; }
+      .dc { padding: 14px !important; }
+      .dc-acc { height: 2px !important; }
+      .dc-num { font-size: .54rem !important; margin-bottom: 6px !important; margin-top: 2px !important; }
+      .dc-title { font-size: .78rem !important; margin-bottom: 4px !important; line-height: 1.2 !important; }
+      .dc-text { font-size: .68rem !important; line-height: 1.4 !important; }
+
+      /* ── FOOTER ── */
+      .footer { padding: 12px 24px !important; }
+      .footer-logo { font-size: .95rem !important; margin-bottom: 3px !important; }
+      .footer-txt { font-size: .64rem !important; }
     }
 
   </style>
